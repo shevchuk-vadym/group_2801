@@ -1,0 +1,182 @@
+@import "./mixins";
+$spacing: 8px;
+.global-content {
+  @include conteiner;
+}
+.promotions {
+  &__item {
+    padding: $spacing;
+  }
+}
+
+.promotion {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  &__image {
+    overflow: hidden;
+    border-radius: 10px;
+    @include normalizeImage;
+  }
+  &__content {
+    margin-top: $spacing;
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__country {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &__title {
+    font-size: 1.3rem;
+    margin-top: $spacing;
+  }
+  &__link {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  &__header {
+    margin-top: $spacing * 5;
+    margin-left: $spacing;
+    margin-bottom: $spacing;
+    position: relative;
+    &__text {
+      width: 40%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    &__text > a:hover::after {
+      content: ">";
+      transform: scale(1.2, 2);
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+    }
+  }
+}
+
+.adventures {
+  padding: 0 1rem;
+  &__header {
+    margin-top: 100px;
+    margin-left: $spacing;
+    margin-bottom: 50px;
+  }
+}
+.adventure {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  &__image {
+    overflow: hidden;
+    border-radius: 10px;
+    @include normalizeImage;
+  }
+  &__content {
+    margin-top: $spacing;
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__country {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &__title {
+    font-size: 1.3rem;
+    margin-top: $spacing;
+  }
+  &__link {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  &__header {
+    margin-top: $spacing * 5;
+    margin-left: $spacing;
+    margin-bottom: $spacing;
+    position: relative;
+    &__text {
+      width: 40%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+    &__text > a:hover::after {
+      content: ">";
+      transform: scale(1.2, 2);
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+    }
+  }
+  &__footer {
+    margin-top: $spacing;
+  }
+}
+
+.opens {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 $spacing;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+
+.open {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+  border-radius: 12px !important;
+  &__image {
+    width: 40% !important;
+    border-radius: 10px;
+    @include normalizeImage;
+  }
+  &__image > img {
+    border-radius: 10px 0 0 10px;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: $spacing;
+  }
+}
+.recomends__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.recomend {
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  &__image {
+    background-image: url(/lesson_9/assets/images/flatroom.jpg);
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}

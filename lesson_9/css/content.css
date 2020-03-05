@@ -1,0 +1,198 @@
+.global-content {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1400px + 2rem);
+  margin: 0 auto;
+}
+
+.promotions__item {
+  padding: 8px;
+}
+
+.promotion {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.promotion__image {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+.promotion__image > img {
+  width: 100%;
+  display: block;
+}
+.promotion__content {
+  margin-top: 8px;
+}
+.promotion__description {
+  display: flex;
+  justify-content: space-between;
+}
+.promotion__country {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.promotion__title {
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+.promotion__link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.promotion__header {
+  margin-top: 40px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.promotion__header__text {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.promotion__header__text > a:hover::after {
+  content: ">";
+  transform: scale(1.2, 2);
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+.adventures {
+  padding: 0 1rem;
+}
+.adventures__header {
+  margin-top: 100px;
+  margin-left: 8px;
+  margin-bottom: 50px;
+}
+
+.adventure {
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.adventure__image {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+.adventure__image > img {
+  width: 100%;
+  display: block;
+}
+.adventure__content {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.adventure__description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.adventure__country {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.adventure__title {
+  font-size: 1.3rem;
+  margin-top: 8px;
+}
+.adventure__link {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.adventure__header {
+  margin-top: 40px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.adventure__header__text {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.adventure__header__text > a:hover::after {
+  content: ">";
+  transform: scale(1.2, 2);
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+.adventure__footer {
+  margin-top: 8px;
+}
+
+.opens {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 8px;
+}
+.opens__content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.open {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+  border-radius: 12px !important;
+}
+.open__image {
+  width: 40% !important;
+  border-radius: 10px;
+  width: 100%;
+}
+.open__image > img {
+  width: 100%;
+  display: block;
+}
+.open__image > img {
+  border-radius: 10px 0 0 10px;
+}
+.open__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.recomends__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.recomend {
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.recomend__image {
+  background-image: url(/lesson_9/assets/images/flatroom.jpg);
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=content.css.map */
