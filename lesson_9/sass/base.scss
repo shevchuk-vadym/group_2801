@@ -3,7 +3,11 @@
 * {
   box-sizing: border-box;
 }
-
+h5 {
+  color: rgb(145, 70, 105);
+  font-size: 12px !important;
+  font-weight: 800;
+}
 html {
   color: $default-text-color;
   font-size: 15px;

@@ -1,0 +1,7 @@
+$screen-md: 992px;
+
+@media (max-width: $screen-md - 1px) {
+  .displaynone {
+    display: none;
+  }
+}
