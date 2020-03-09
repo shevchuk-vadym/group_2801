@@ -67,6 +67,8 @@
 }
 
 .adventures {
+  margin: 0 auto;
+  max-width: calc(1400px + 2rem);
   padding: 0 1rem;
 }
 .adventures__header {
@@ -142,8 +144,13 @@
 }
 
 .opens {
+  margin: 0 auto;
+  max-width: calc(1400px + 2rem);
   margin-top: 50px;
   width: 100%;
+  padding: 0 16px;
+}
+.opens__header {
   padding: 0 8px;
 }
 .opens__content {
@@ -182,12 +189,15 @@
 .recomends {
   margin-top: 50px;
   width: 100%;
-  padding: 0 8px;
+  padding: 0 16px;
 }
 .recomends__content {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+}
+.recomends__header {
+  padding: 0 8px;
 }
 
 .recomend {
@@ -232,6 +242,7 @@
 }
 .supermasters__header {
   margin-bottom: 20px;
+  padding: 0 8px;
 }
 
 .supermaster {
@@ -316,12 +327,101 @@
   display: block;
 }
 
+.uniquespaces__header {
+  padding: 0 8px;
+}
 .uniquespaces__header__text {
   margin-bottom: 40px;
   margin-top: 50px;
 }
 .uniquespaces__header__text > h2 {
   margin-bottom: 10px;
+}
+
+.newyork {
+  min-height: 280px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.newyork__image {
+  background-image: url(../assets/images/new_york.webp);
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 300px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newyork__content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.newyork__description > span {
+  margin: 10px 0;
+  display: block;
+}
+
+.newyorkers__header {
+  padding: 0 8px;
+}
+.newyorkers__header__text {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.newyorkers__header__text > h2 {
+  margin-bottom: 10px;
+}
+
+.informations {
+  margin-top: 200px !important;
+  width: 100%;
+  max-width: calc(1400px + 2rem);
+  padding: 0 80px;
+  margin: 0 auto;
+  border-top: 1px solid #dddddd;
+}
+.informations__main {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+}
+.informations__col {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  flex-wrap: wrap;
+  display: flex;
+}
+.informations__footer {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 0;
+  border-top: 1px solid #dddddd;
+}
+.informations__footer > a {
+  margin: 0;
+}
+
+.textures {
+  margin: 0 8px;
+}
+
+.information__link {
+  display: block;
+  color: #222222;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.information__link:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=content.css.map */
