@@ -198,7 +198,7 @@
   flex-direction: column;
 }
 .recomend__image {
-  background-image: url(/lesson_9/assets/images/flatroom.jpg);
+  background-image: url(./lesson_9/assets/images/flatroom.jpg);
   width: 100%;
   display: block;
   background-repeat: no-repeat;
@@ -292,7 +292,7 @@
   flex-direction: column;
 }
 .uniquespace__image {
-  background-image: url(/lesson_9/assets/images/House_on_a_tree.jpg);
+  background-image: url(./lesson_9/assets/images/House_on_a_tree.jpg);
   width: 100%;
   display: block;
   background-repeat: no-repeat;
