@@ -26,14 +26,15 @@ function greenToggle() {
     greenToggleDeactive();
   }
 }
-
-function trafficLight() {
-  if (redToggle === false) {
-    yellowToggle = true;
-    greenToggle = true;
+console.log(redToggleActive);
+function trafficLightRed() {
+  if (isEnable === false) {
+    redToggleActive;
+  } else {
+    yellowToggleDeactive;
+    greenToggleDeactive;
   }
 }
-console.log(trafficLight);
 
 function redToggleDeactive() {
   red.classList.remove(ACTIVE_CLASS_NAME);
