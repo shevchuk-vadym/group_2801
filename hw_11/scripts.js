@@ -15,10 +15,10 @@ const button = document.querySelector(".button");
 const noneHello = document.querySelector(".hello");
 function t() {
   if (button.style.background === "green") {
-    noneHello.style.display = "block";
+    noneHello.style.display = "none";
     button.style.background = "red";
   } else {
-    noneHello.style.display = "none";
+    noneHello.style.display = "block";
     button.style.background = "green";
   }
 }
