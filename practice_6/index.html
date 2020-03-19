@@ -7,10 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="col">
-      <button class="col__red blank" onclick="trafficLightRed()"></button>
-      <button class="col__yellow blank" onclick="yellowToggle()"></button>
-      <button class="col__green blank" onclick="greenToggle()"></button>
+    <div class="lighter">
+      <button
+        class="lighter__light lighter__light_red"
+        onclick="onClick(this)"
+      ></button>
+      <button
+        class="lighter__light lighter__light_yellow"
+        onclick="onClick(this)"
+      ></button>
+      <button
+        class="lighter__light lighter__light_green"
+        onclick="onClick(this)"
+      ></button>
     </div>
     <script src="./scripts.js"></script>
   </body>

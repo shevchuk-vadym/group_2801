@@ -1,0 +1,28 @@
+.slideshow {
+  width: 600px;
+  &__slides {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  &__slide {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    visibility: hidden;
+    opacity: 0;
+    &:nth-child(2) {
+      transform: translatex(-100%);
+    }
+    &:nth-child(3) {
+      transform: translatex(-200%);
+    }
+    &:nth-child(4) {
+      transform: translatex(-300%);
+    }
+  }
+  &__frame {
+    width: 100%;
+    display: block;
+  }
+}

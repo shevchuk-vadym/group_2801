@@ -1,4 +1,4 @@
-.col {
+.lighter {
   border: 1px solid black;
   width: 40px;
   height: 100px;
@@ -6,22 +6,21 @@
   justify-content: space-around;
   flex-direction: column;
 }
-.col__red.active {
-  background-color: red;
-}
-.col__yellow.active {
-  background-color: yellow;
-}
-.col__green.active {
-  background-color: green;
-}
-
-.blank {
+.lighter__light {
   border: 1px solid black;
   width: 30px;
   border-radius: 50%;
   height: 30px;
   margin: 0 auto;
+}
+.lighter__light_red.active {
+  background-color: red;
+}
+.lighter__light_yellow.active {
+  background-color: yellow;
+}
+.lighter__light_green.active {
+  background-color: green;
 }
 
 /*# sourceMappingURL=index.css.map */

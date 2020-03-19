@@ -1,0 +1,30 @@
+.slideshow {
+  width: 600px;
+}
+.slideshow__slides {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.slideshow__slide {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.slideshow__slide:nth-child(2) {
+  transform: translatex(-100%);
+}
+.slideshow__slide:nth-child(3) {
+  transform: translatex(-200%);
+}
+.slideshow__slide:nth-child(4) {
+  transform: translatex(-300%);
+}
+.slideshow__frame {
+  width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

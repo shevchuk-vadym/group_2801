@@ -1,25 +1,24 @@
-.col {
+.lighter {
   border: 1px solid black;
   width: 40px;
   height: 100px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  &__red.active {
-    background-color: red;
+  &__light {
+    border: 1px solid black;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    margin: 0 auto;
+    &_red.active {
+      background-color: red;
+    }
+    &_yellow.active {
+      background-color: yellow;
+    }
+    &_green.active {
+      background-color: green;
+    }
   }
-  &__yellow.active {
-    background-color: yellow;
-  }
-  &__green.active {
-    background-color: green;
-  }
-}
-
-.blank {
-  border: 1px solid black;
-  width: 30px;
-  border-radius: 50%;
-  height: 30px;
-  margin: 0 auto;
 }
