@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <title>Document</title>
   </head>
-  <body>
-    <script src="./script.js"></script>
+  <body style="background-color: darkgray;">
+    <div class="form">
+      <input type="text" class="form__name" placeholder="NAME" />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        class="form__text"
+        placeholder="Enter your comment"
+      ></textarea>
+      <button class="form__add">ADD</button>
+    </div>
+    <div class="forms">
+      <div class="forms__list__text"></div>
+      <div class="forms__list__name"></div>
+    </div>
+    <script type="module" src="./scripts/app.js"></script>
   </body>
 </html>
