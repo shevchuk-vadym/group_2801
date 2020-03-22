@@ -1,5 +1,6 @@
 .slideshow {
   width: 600px;
+  margin: 150px auto;
 }
 .slideshow__slides {
   width: 100%;
@@ -13,18 +14,18 @@
   visibility: hidden;
   opacity: 0;
 }
-.slideshow__slide:nth-child(2) {
-  transform: translatex(-100%);
+.slideshow__slide.animate {
+  transition: all 1s;
 }
-.slideshow__slide:nth-child(3) {
-  transform: translatex(-200%);
-}
-.slideshow__slide:nth-child(4) {
-  transform: translatex(-300%);
+.slideshow__slide.slide_active {
+  visibility: visible;
+  opacity: 1;
 }
 .slideshow__frame {
   width: 100%;
   display: block;
+  border-radius: 20px;
+  border: 2px solid red;
 }
 
 /*# sourceMappingURL=main.css.map */

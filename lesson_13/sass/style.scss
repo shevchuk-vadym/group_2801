@@ -33,8 +33,8 @@
   }
 }
 
-.forms {
-  &__list {
+.list {
+  &__item {
     width: 340px;
     display: flex;
     flex-direction: column;
@@ -42,5 +42,10 @@
     background: #ffffff;
     border: 1px solid #d9d9d9;
     border-radius: 9px;
+    margin: 20px;
   }
+}
+
+.conteiner {
+  margin: 0 auto;
 }
