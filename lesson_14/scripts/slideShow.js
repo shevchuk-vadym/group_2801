@@ -50,6 +50,7 @@ function createPager() {
   for (let i = 0; i < slides.length; i++) {
     const li = document.createElement("li");
     const button = document.createElement("button");
+    button.classList.add("slideshow__pager__btn");
     button.textContent = i;
     button.addEventListener("click", () => {
       toggleOff();
@@ -61,13 +62,6 @@ function createPager() {
   }
   slideShowRoot.append(pagerRoot);
 }
-
-// function addDynamicStyles() {
-//   for (let i = 0; i < slides.length; i++) {
-//     const slide = slides[i];
-//     slide.style.transform = "translateX(- ${100 * i}%)";
-//   }
-// }
 
 function initSlider() {
   addDynamicStyles();
