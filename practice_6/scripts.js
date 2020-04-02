@@ -8,5 +8,5 @@ function disableAll() {
 
 function onClick(button) {
   disableAll();
-  Button.classList.add("active");
+  button.classList.add("active");
 }
