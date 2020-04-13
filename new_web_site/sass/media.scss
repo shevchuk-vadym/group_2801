@@ -1,0 +1,50 @@
+$sreen-md: 1023px;
+$screen-sm: 768px;
+$screen-xs: 425px;
+@media (max-width: $sreen-md - 1px,) {
+  .nav {
+    &__link {
+      &__wrap {
+        & > a {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  .white-square {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .banner {
+    &__title {
+      &__header {
+        font-size: 100px;
+      }
+    }
+  }
+}
+@media (max-width: $screen-sm - 1px) {
+  .nav {
+    &__link {
+      &__wrap {
+        padding-left: 50px;
+        & > a {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  .white-square {
+    width: 25px;
+    height: 25px;
+    font-size: 11px;
+  }
+  .banner {
+    &__title {
+      &__header {
+        font-size: 80px;
+      }
+    }
+  }
+}
