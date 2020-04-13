@@ -1,0 +1,232 @@
+.extra-header {
+  width: 100vw;
+  max-width: 1200px;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  &__content > h5 {
+    font-size: 16px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+.header-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1200px;
+  background-color: rgb(248, 214, 110);
+}
+.nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  &__fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    max-width: 1200px;
+  }
+  &__link {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__socials {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    &__log-in {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    &__log-in > span {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    &__wrapper {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
+.white-square {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+.site-name {
+  width: 100%;
+  &__content {
+    width: 50%;
+    margin: 0 auto;
+  }
+  &__link {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Pacifico", cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    color: black;
+  }
+}
+.main__image {
+  width: 100%;
+  &__content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  &__img {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
+.main__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 150px;
+  &__head {
+    font-size: 38px;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+  &__header {
+    position: relative;
+    z-index: 0;
+    font-size: 115px;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.4em;
+    color: white;
+  }
+  &__button {
+    margin-top: 20px;
+    border: 3px solid white;
+  }
+  &__button > span {
+    font-size: 24px;
+    color: white;
+  }
+}
+.btn {
+  width: 130px;
+  height: 42px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(68, 61, 61);
+    border: none;
+  }
+}
+.container {
+  width: 100vw;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  &__image {
+    width: 50%;
+  }
+  &__text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text > h2 {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  &__img {
+    background-image: url(../assets/img/a35a7632c8d24cec95168160ed32c8ad.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+  &__named {
+    margin-top: 20px;
+  }
+  &__named > span {
+    font-size: 24px;
+    font-family: "Pacifico", sans-serif;
+  }
+  &__info {
+    padding: 40px 0;
+    width: 55%;
+    display: flex;
+  }
+  &__button {
+    border: 2px solid black;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+.promotion {
+  background-color: rgb(172, 229, 207);
+  max-width: 1200px;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    background-image: url(../assets/img/tast.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  &__texting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-310px);
+  }
+  &__text {
+    color: white;
+    font-size: 38px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+  }
+  &__large-text {
+    margin-top: 30px;
+    color: white;
+    font-size: 115px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+  }
+  &__button {
+    margin-top: 30px;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+  }
+}
