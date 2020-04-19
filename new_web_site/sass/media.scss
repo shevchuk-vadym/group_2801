@@ -24,7 +24,7 @@ $screen-xs: 425px;
     }
   }
 }
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-xs  - 1px) {
   .lines {
     width: 100%;
     height: 5px;
@@ -36,8 +36,8 @@ $screen-xs: 425px;
     justify-content: flex-end;
     &__menu {
       &__target {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         // background-color: yellowgreen;
         display: flex;
         flex-direction: column;
@@ -70,22 +70,25 @@ $screen-xs: 425px;
     display: none;
   }
   .banner {
-    height: 1000px;
+    height: 700px;
     &__image__img {
-      width: 51%;
+      width: 60%;
       max-width: 400px;
     }
     &__title {
-      bottom: 200px;
+      bottom: 155px;
       &__button {
-        width: 220px;
-        height: 59px;
+        width: 180px;
+        height: 48px;
       }
       &__button > span {
         font-size: 30px;
       }
+      &__head {
+        font-size: 30px;
+      }
       &__header {
-        font-size: 80px;
+        font-size: 60px;
         width: 370px;
         word-wrap: break-word;
         text-transform: uppercase;
@@ -98,11 +101,15 @@ $screen-xs: 425px;
     &__image {
       width: 100%;
     }
+    &__img {
+      height: 350px;
+    }
     &__main__text {
       width: 100%;
     }
     &__text {
       align-items: center;
+      padding-left: 0px;
     }
     &__text > h2 {
       padding-top: 20px;
@@ -114,7 +121,7 @@ $screen-xs: 425px;
       width: 100%;
     }
     &__info > span {
-      font-size: 35px;
+      font-size: 20px;
     }
     &__button {
       margin-bottom: 20px;
