@@ -25,6 +25,65 @@ $screen-xs: 425px;
   }
 }
 @media (max-width: $screen-xs  - 1px) {
+  .active {
+    display: block !important;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    width: 100vw;
+    &__main {
+      flex-shrink: 0;
+      flex-grow: 1;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    &__nav {
+      flex-grow: 0;
+      flex-shrink: 0;
+      display: none;
+    }
+  }
+  .location {
+    &__img {
+      height: 372px;
+    }
+    &__text {
+      background-color: white;
+      align-items: center;
+      width: 100%;
+      padding: 30px 0;
+    }
+    &__info {
+      width: 80%;
+    }
+    flex-direction: column;
+    &__main__text {
+      width: 100%;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+  .promotion {
+    height: 620px;
+    &__text__main {
+      height: 500px;
+    }
+    &__text-small {
+      font-size: 33px;
+    }
+    &__text-big {
+      font-size: 47px;
+    }
+    &__button {
+      position: absolute;
+      bottom: 0;
+    }
+  }
   .lines {
     width: 100%;
     height: 5px;
@@ -36,19 +95,18 @@ $screen-xs: 425px;
     justify-content: flex-end;
     &__menu {
       &__target {
-        width: 40px;
-        height: 40px;
-        // background-color: yellowgreen;
+        width: 30px;
+        height: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        cursor: pointer;
+        position: relative;
+        z-index: 5;
       }
       &__tablet {
         display: block;
         width: 60px;
         height: 60px;
-        // background-color: rgb(247, 247, 168);
         margin-right: 20px;
       }
     }
@@ -57,13 +115,42 @@ $screen-xs: 425px;
     }
     &__link {
       display: none;
+      &__wrap {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+      }
     }
     &__fixed {
       background-color: white;
       z-index: 0;
     }
     &__socials {
+      &__log-in {
+        justify-content: space-evenly;
+      }
       display: none;
+    }
+    &__tablet {
+      width: 90%;
+      height: 100vh;
+      background-color: white;
+      z-index: 3;
+      position: fixed;
+      right: 0;
+      top: 0;
+      min-height: 100vh;
+      width: 80vw;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -125%;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 0;
+      }
     }
   }
   .white-square {
@@ -108,6 +195,7 @@ $screen-xs: 425px;
       width: 100%;
     }
     &__text {
+      background-color: white;
       align-items: center;
       padding-left: 0px;
     }
