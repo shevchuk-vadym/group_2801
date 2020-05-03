@@ -21,12 +21,13 @@ class Postes {
     xhr.send();
     xhr.onload = () => {
       const data = JSON.parse(xhr.response);
-      for (let obj of data) {
+      console.log(data.list);
+      for (let obj of data.list) {
         const ul = document.createElement("ul");
         const img = document.createElement("img");
-        img.src = obj.img;
+        img.src = obj.preview.high;
         ul.append(img);
-        this.postes.append(ul);
+        this.rootElement.append(ul);
       }
     };
   }
