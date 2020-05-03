@@ -1,10 +1,10 @@
-const xhr = XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open(
   "GET",
-  "https://my-json-server.typicode.com/ilyalytvynov/ads-box-server/ads"
+  "https://my-json-server.typicode.com/ilyalytvynov/ads-box-server/movies"
 );
 
 xhr.send();
 xhr.onload = function () {
-  Console.log(xhr);
+  console.log(xhr);
 };
