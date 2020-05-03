@@ -8,7 +8,7 @@ class Postes {
   }
 
   render() {
-    this.postes = document.createElement("li");
+    this.postes = document.createElement("ul");
 
     this.rootElement.append(this.postes);
   }
@@ -23,7 +23,7 @@ class Postes {
       const data = JSON.parse(xhr.response);
       console.log(data.list);
       for (let obj of data.list) {
-        const ul = document.createElement("ul");
+        const li = document.createElement("li");
         const img = document.createElement("img");
         const p = document.createElement("p");
         const h3 = document.createElement("h3");
@@ -34,12 +34,12 @@ class Postes {
         h5.textContent = obj.genre;
         img.src = obj.preview.high;
 
-        ul.append(h3);
-        ul.append(img);
-        ul.append(p);
-        ul.append(h5);
+        li.append(h3);
+        li.append(img);
+        li.append(p);
+        li.append(h5);
 
-        this.rootElement.append(ul);
+        this.rootElement.append(li);
       }
     };
   }
