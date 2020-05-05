@@ -39,6 +39,11 @@ class Postes {
         li.append(p);
         li.append(h5);
 
+        li.classList.add("movie");
+        img.classList.add("image");
+        h3.classList.add("name");
+        h5.classList.add("preview");
+
         this.rootElement.append(li);
       }
     };

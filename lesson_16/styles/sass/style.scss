@@ -1,0 +1,33 @@
+.movie-box-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.movie {
+  width: 30%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    width: 105%;
+  }
+}
+
+.name {
+  font-size: 16px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    font-size: 20px;
+  }
+}
